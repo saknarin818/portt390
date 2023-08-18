@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel =stylesheet" href="javasc.js">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css">
+    <script src="https://kit.fontawesome.com/6843eb44d6.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.3/chart.min.js" integrity="sha512-fMPPLjF/Xr7Ga0679WgtqoSyfUoQgdt8IIxJymStR5zV3Fyb6B3u/8DcaZ6R6sXexk5Z64bCgo2TYyn760EdcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <hr>
+    <h1>PORTFOLIO</h1>
+    <hr>
+    <div class="container">
+        <img class="logo" src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/364785818_3512607192329567_8847105179060388570_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=4ndJ0-lpQmwAX9zArIx&_nc_ht=scontent.fcnx3-1.fna&oh=00_AfCO8vlbdupYH5Bnp-BWtgoA-taATR6_7cy6Kj6p1ojYOA&oe=64E50B7C" alt="">
+        <h2 class="name">Saknarin Muangsiri</h2>
+        <span class="slogan">"ลาบยโส"</span>
+        <div class="social-img">
+            <ul>
+                <li><a href="#" target="_blank"></a><i class="fa fa-brands fa-instagram" ></i></li>
+                <li><a href="#" target="_blank"></a><i class="fa-brands fa-line"></i></li>
+                <li><a href="#" target="_blank"></a><i class="fa-brands fa-facebook"></i></li>
+            </ul>
+            <p class="bio">
+              Name:Saknarin Muangsiri <br>
+              Nickname:Poom <br>
+              Birt้day:July 25, 2003 <br>
+              nationality:Thai <br>
+              religion:Buddhist <br>
+              height:178 <br>
+              weight:80
+            </p>
+        </div>
+    </div>
+<hr>
+
+<div>
+    <canvas id="myChart"></canvas>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+      type: 'bar', // Change the chart type to 'bar'
+      data: {
+        labels: ['Games', 'Movie', 'Write code', 'Exercise'],
+        datasets: [{
+          label: 'hour',
+          data: [5, 3, 2, 2],
+          borderWidth: 1,
+          backgroundColor: ['red', 'blue', 'green', 'purple'] // Customize bar colors
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true // Ensure the y-axis starts at 0
+          }
+        }
+      }
+    });
+</script>
+
+<hr>
+
+<div class="footer">
+    Saknarin Muangsiri &copy;
+    <script>
+        document.write(new Data().getFullYear())
+    </script>.Portfolio by Saknarin
+</div>
+
+</body>
+</html>
